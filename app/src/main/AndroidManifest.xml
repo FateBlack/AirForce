@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".HaoYouActivity"></activity>
+        <activity android:name=".MainActivityBB"></activity>
+        <activity android:name=".MoShiActivity"></activity>
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>

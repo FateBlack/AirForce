@@ -1,3 +1,114 @@
 <resources>
-    <string name="app_name">AirForce</string>
+    <string name="app_name">飞机油耗计算系统</string>
+    <string-array name="spingarr">
+        <item>机型1</item>
+        <item>机型2</item>
+        <item>机型3</item>
+        <item>机型4</item>
+        <item>机型5</item>
+        <item>机型6</item>
+        <item>机型7</item>
+        <item>机型8</item>
+        <item>机型9</item>
+        <item>机型10</item>
+        <item>机型11</item>
+        <item>机型12</item>
+        <item>机型13</item>
+        <item>机型14</item>
+        <item>机型15</item>
+    </string-array>
+
+    <string-array name="guazai">
+        <item>挂载模式1</item>
+        <item>挂载模式2</item>
+        <item>挂载模式3</item>
+        <item>挂载模式4</item>
+        <item>挂载模式5</item>
+        <item>挂载模式6</item>
+        <item>挂载模式7</item>
+        <item>挂载模式8</item>
+        <item>挂载模式9</item>
+        <item>挂载模式10</item>
+        <item>挂载模式11</item>
+    </string-array>
+
+    <string-array name="gua_H">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+
+    <string-array name="gua_T">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+
+    <string-array name="gua_Q">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
 </resources>
