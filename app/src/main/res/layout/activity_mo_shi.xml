@@ -31,8 +31,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner1"
-            android:entries="@array/guazai"
     />
+   <!-- <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:entries="@array/guazai"
+        />-->
 
     <TextView
             android:gravity="center"
@@ -115,7 +121,7 @@
         />
 
         <EditText
-                android:id="@+id/conunt"
+                android:id="@+id/count"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>
