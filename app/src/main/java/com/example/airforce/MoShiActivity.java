@@ -52,7 +52,11 @@ public class MoShiActivity extends AppCompatActivity {
 
                 initData();
 
+                Bundle bundle = new Bundle();
+
                 Intent intent = new Intent(MoShiActivity.this,ResultActivity.class);
+                intent.putExtra("VD", String.valueOf(parm.getVD()));
+                intent.putExtra("RD", String.valueOf(parm.getRD()));
                 startActivity(intent);
             }
         });
