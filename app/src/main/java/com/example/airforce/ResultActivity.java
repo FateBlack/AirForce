@@ -8,18 +8,21 @@ import android.widget.TextView;
 import com.example.airforce.Domain.Parm;
 import com.example.airforce.utils.ParmUtil;
 
+import java.text.DecimalFormat;
+
 public class ResultActivity extends AppCompatActivity {
 
-    TextView q_pingT;
-    TextView q_sheng_1T;
-    TextView q_sheng_2T;
-    TextView q_sheng_3T;
-    TextView q_sheng_4T;
+
 
     TextView air_hd_1T;
     TextView air_hd_2T;
     TextView air_hd_3T;
     TextView air_hd_4T;
+
+    TextView FD_Min_Speed1;
+    TextView FD_Min_Speed2;
+    TextView FD_Min_Speed3;
+    TextView FD_Min_Speed4;
 
     TextView fly_time;
     TextView fly_all_time;
@@ -30,13 +33,26 @@ public class ResultActivity extends AppCompatActivity {
     TextView chuhang_length;
     TextView fanhang_length;
 
+    TextView q_pingT;
+    TextView q_sheng_1T;
+    TextView q_sheng_2T;
+    TextView q_sheng_3T;
+    TextView q_sheng_4T;
+
     TextView cuhang_oil;
     TextView fanhang_oil;
+
+
+    TextView kill1;
+    TextView kill2;
+    TextView kill3;
+    TextView kill4;
 
     TextView PFMax_oil1;
     TextView PFMax_oil2;
     TextView PFMax_oil3;
     TextView PFMax_oil4;
+
 
 
     @Override
@@ -77,6 +93,19 @@ public class ResultActivity extends AppCompatActivity {
         PFMax_oil3.setText(String.valueOf(ParmUtil.PF_Max_Oil[2]));
         PFMax_oil4.setText(String.valueOf(ParmUtil.PF_Max_Oil[3]));
 
+        FD_Min_Speed1.setText(String.valueOf(ParmUtil.FD_Min_speed[0]));
+        FD_Min_Speed2.setText(String.valueOf(ParmUtil.FD_Min_speed[1]));
+        FD_Min_Speed3.setText(String.valueOf(ParmUtil.FD_Min_speed[2]));
+        FD_Min_Speed4.setText(String.valueOf(ParmUtil.FD_Min_speed[3]));
+
+
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        kill1.setText(String.valueOf(df.format(ParmUtil.kill[0])));
+        kill2.setText(String.valueOf(df.format(ParmUtil.kill[1])));
+        kill3.setText(String.valueOf(df.format(ParmUtil.kill[2])));
+        kill4.setText(String.valueOf(df.format(ParmUtil.kill[3])));
+
     }
 
     private void initView() {
@@ -108,5 +137,14 @@ public class ResultActivity extends AppCompatActivity {
         PFMax_oil3 = findViewById(R.id.pingfei30000_max_oli);
         PFMax_oil4 = findViewById(R.id.pingfei40000_max_oli);
 
+        FD_Min_Speed1 = findViewById(R.id.disu10000_min);
+        FD_Min_Speed2 = findViewById(R.id.disu20000_min);
+        FD_Min_Speed3 = findViewById(R.id.disu30000_min);
+        FD_Min_Speed4 = findViewById(R.id.disu40000_min);
+
+        kill1 = findViewById(R.id.jueduan10000_length);
+        kill2 = findViewById(R.id.jueduan20000_length);
+        kill3 = findViewById(R.id.jueduan30000_length);
+        kill4 = findViewById(R.id.jueduan40000_length);
     }
 }

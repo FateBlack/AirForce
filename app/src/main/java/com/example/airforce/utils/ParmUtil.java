@@ -58,6 +58,11 @@ public class ParmUtil {
 
     public static float[] PF_Max_Oil = new float[10];
 
+    public static int[] FD_Min_speed = new int[10];
+
+    public static float[] kill = new float[10];
+
+
     // 单纵
     public void get_B50() {
         if (V_pin == 950) {
@@ -110,6 +115,22 @@ public class ParmUtil {
         Log.i("SHOW", "get_CF_time: "+dd);
         return bb + "'" + dd + "”";
     }
+
+    public float get_PFMaxOil(int x) {
+        return x - (Q_shang + Q_xia) * count - count - Q_liu;
+    }
+
+    public int get_FDMinSoeed(float x){
+        float a = (S_zong - S_shang - S_xia) / (x / (count * q * 60));
+        int b;
+        if (a - (int) a >= 0.5) {
+            b = (int) a + 1;
+        }else {
+            b = (int) a;
+        }
+        return b;
+
+    }
     // 复纵
     public String getKongZhongHuoDong(float x) {
         int b;
@@ -127,9 +148,11 @@ public class ParmUtil {
         CF_oil[1] = (RD - S_xia) / V_pin * 60 * q * count + Q_xia + count + 1000;
     }
 
-    public float get_PFMaxOil(int x) {
-        return x - (Q_shang + Q_xia) * count - count - Q_liu;
+
+    public float get_kill(int x) {
+        return ((x - Q_shang - Q_xia - count - Q_liu) / (count * q * 60) * V_pin + Q_shang + Q_xia) / 2;
     }
+
 
    public ParmUtil(Activity context,
              int guazai,
@@ -184,7 +207,8 @@ public class ParmUtil {
            J49[i] = get_J49(Q_shen[i]);
            KongZhongHuoDong[i] = getKongZhongHuoDong(J49[i]);
            PF_Max_Oil[i] = get_PFMaxOil((i + 1) * 10000);
-
+           FD_Min_speed[i] = get_FDMinSoeed(PF_Max_Oil[i]);
+           kill[i] = get_kill((i + 1) * 10000);
        }
 
        QuanChen[0] = getKongZhongHuoDong(I49);
@@ -194,6 +218,7 @@ public class ParmUtil {
        CF_time[1] = get_CF_time(RD);
 
        get_CF_oil();
+
 
 
     }
