@@ -218,9 +218,6 @@ public class ParmUtil {
        CF_time[1] = get_CF_time(RD);
 
        get_CF_oil();
-
-
-
     }
 
 }

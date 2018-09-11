@@ -105,7 +105,7 @@ public class MoShiActivity extends AppCompatActivity {
 
     private void initData() {
 
-/*        String S_zong = S_zong_ET.getText().toString();
+        String S_zong = S_zong_ET.getText().toString();
         String high = high_ET.getText().toString();
         String V_pin = V_pin_ET.getText().toString();
         String count = count_ET.getText().toString();
@@ -122,19 +122,19 @@ public class MoShiActivity extends AppCompatActivity {
         parm.setQ_liu(Float.parseFloat(Q_liu));
         parm.setFen_Hao(Float.parseFloat(Fen_Hao));
         parm.setVD(Float.parseFloat(VD));
-        parm.setRD(Float.parseFloat(RD));*/
+        parm.setRD(Float.parseFloat(RD));
 
 /**
  *      默认值 暂时放置
  */
-        parm.setS_zong(228);
+/*        parm.setS_zong(228);
         parm.setHigh(8);
         parm.setV_pin(900);
         parm.setCount(2);
         parm.setQ_liu(1000);
         parm.setFen_Hao(0);
         parm.setVD(111);
-        parm.setRD(450);
+        parm.setRD(450);*/
 
         ParmUtil parmUtil = new ParmUtil(MoShiActivity.this,guazai,parm);
 
