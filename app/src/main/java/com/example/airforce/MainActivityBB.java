@@ -27,7 +27,7 @@ public class MainActivityBB extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i>0){
                     AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivityBB.this);
-                    dialog.setMessage("您选择了机型："+i)
+                    dialog.setMessage("您选择了机型："+(i+1))
                             .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent intent = new Intent(MainActivityBB.this,MoShiActivity.class);

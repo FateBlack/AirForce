@@ -114,15 +114,30 @@ public class MoShiActivity extends AppCompatActivity {
         String VD = VD_ET.getText().toString();
         String RD = RD_ET.getText().toString();
 
+/*
+        if (S_zong == "" || high == null || V_pin == null || count == null || Q_liu == null || Fen_Hao == null || VD == null || RD == null) {
 
-        parm.setS_zong(Float.parseFloat(S_zong));
-        parm.setHigh(Float.parseFloat(high));
-        parm.setV_pin(Float.parseFloat(V_pin));
-        parm.setCount(Float.parseFloat(count));
-        parm.setQ_liu(Float.parseFloat(Q_liu));
-        parm.setFen_Hao(Float.parseFloat(Fen_Hao));
-        parm.setVD(Float.parseFloat(VD));
-        parm.setRD(Float.parseFloat(RD));
+        }else{
+
+        }
+
+
+
+*/
+        try {
+            parm.setS_zong(Float.parseFloat(S_zong));
+            parm.setHigh(Float.parseFloat(high));
+            parm.setV_pin(Float.parseFloat(V_pin));
+            parm.setCount(Float.parseFloat(count));
+            parm.setQ_liu(Float.parseFloat(Q_liu));
+            parm.setFen_Hao(Float.parseFloat(Fen_Hao));
+            parm.setVD(Float.parseFloat(VD));
+            parm.setRD(Float.parseFloat(RD));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
 
 /**
  *      默认值 暂时放置

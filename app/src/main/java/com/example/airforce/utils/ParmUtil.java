@@ -76,12 +76,14 @@ public class ParmUtil {
         }
     }
 
-
     public void get_q() {
         int i = (int) B50;
         int j = (int) high;
-        q = GzArray[i][j] + Fen_Hao;
-
+        try {
+            q = GzArray[i][j] + Fen_Hao;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void get_F50(){
