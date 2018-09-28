@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ResultActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:background="#11aaee"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输出结果"
+                android:textColor="#fff"
+                android:textSize="18dp"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:background="#c9c6c6"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:background="#3d3737"
+                    android:textColor="#d2d0d0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="Q平"
+                    android:textSize="15dp"
+            />
+
+
+            <TextView
+                    android:id="@+id/q_ping"
+                    android:textColor="#11aaee"
+                    android:layout_weight="18"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="544.40"
+                    android:textSize="18dp"
+            />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:background="#c9c6c6"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:background="#3d3737"
+                    android:textColor="#d2d0d0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="Q剩"
+                    android:textSize="15dp"
+            />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="10000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/q_sheng_10000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="18dp"
+                    />
+
+
+                </LinearLayout>
+
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="20000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/q_sheng_20000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="2644.40"
+                            android:textSize="18dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="30000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/q_sheng_30000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="2668.40"
+                            android:textSize="18dp"
+                    />
+
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="40000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/q_sheng_40000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="688.40"
+                            android:textSize="18dp"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:background="#c9c6c6"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:background="#3d3737"
+                    android:textColor="#d2d0d0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="空中活动时间"
+                    android:textSize="15dp"
+            />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="10000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/air_10000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="18dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:background="#3d3737"
+                            android:textColor="#d2d0d0"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:text="全程平飞时间"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                    />
+
+                </LinearLayout>
+
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="20000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/air_20000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="2644.40"
+                            android:textSize="18dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#11aaee"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="1215.00"
+                            android:textSize="18dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="30000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/air_30000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="2668.40"
+                            android:textSize="18dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:background="#3d3737"
+                            android:textColor="#d2d0d0"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:text="全程时间"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="40000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/air_40000"
+                            android:textColor="#11aaee"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="688.40"
+                            android:textSize="18dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#11aaee"
+                            android:layout_weight="7.5"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="688.40"
+                            android:textSize="18dp"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:background="#c9c6c6"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:background="#3d3737"
+                    android:textColor="#d2d0d0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="出返航数据"
+                    android:textSize="15dp"
+            />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="出航
+                            距离"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/chuhang_length"
+                            android:textColor="#11aaee"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="返航
+                            距离"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/fanhang_length"
+                            android:textColor="#11aaee"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                </LinearLayout>
+
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="出航
+                            时间"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/chuhang_time"
+                            android:textColor="#11aaee"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="返航
+                            时间"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/fanhang_time"
+                            android:textColor="#11aaee"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="出航
+                            最低油量"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/chuhang_oil"
+                            android:textColor="#11aaee"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="返航
+                            最低油量"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/fanhang_oil"
+                            android:textColor="#11aaee"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="5dp"
+              android:layout_height="match_parent"
+              android:background="#c9c6c6"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:background="#3d3737"
+                    android:textColor="#d2d0d0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="其他数据"
+                    android:textSize="15dp"
+            />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="挂载"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="10000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="20000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="30000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="40000"
+                            android:textSize="15dp"
+                    />
+
+                </LinearLayout>
+
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="最大
+                            平飞用油"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/pingfei10000_max_oli"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/pingfei20000_max_oli"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/pingfei30000_max_oli"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/pingfei40000_max_oli"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="最小
+                            可飞地速"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/disu10000_min"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/disu20000_min"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/disu30000_min"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/disu40000_min"
+                            android:textColor="#11aaee"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="15dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:background="#c9c6c6"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:background="#3d3737"
+                    android:textColor="#d2d0d0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="决断距离"
+                    android:textSize="15dp"
+            />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="10000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/jueduan10000_length"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="544.40"
+                            android:textSize="18dp"
+                    />
+
+
+                </LinearLayout>
+
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="20000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/jueduan20000_length"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="2644.40"
+                            android:textSize="18dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:background="#f6f4f0"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="30000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/jueduan30000_length"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="2668.40"
+                            android:textSize="18dp"
+                    />
+
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#c9c6c6"
+                />
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                >
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:textColor="#333232"
+                            android:layout_weight="4"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="40000"
+                            android:textSize="15dp"
+                    />
+
+                    <View android:layout_width="2dp"
+                          android:layout_height="match_parent"
+                          android:background="#c9c6c6"
+                    />
+
+                    <TextView
+                            android:id="@+id/jueduan40000_length"
+                            android:textColor="#11aaee"
+                            android:layout_weight="15"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:text="688.40"
+                            android:textSize="18dp"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
