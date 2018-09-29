@@ -36,6 +36,13 @@ public class MoShiActivity extends AppCompatActivity {
     private Parm parm = new Parm();
     private EditText VD_ET;
     private EditText RD_ET;
+    private EditText T_sangET;
+    private EditText T_xiaET;
+    private EditText S_sangET;
+    private EditText S_xiaET;
+    private EditText Q_sangET;
+    private EditText Q_xiaET;
+    private EditText q_ET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +107,14 @@ public class MoShiActivity extends AppCompatActivity {
         VD_ET = (EditText)findViewById(R.id.VD);
         RD_ET = (EditText)findViewById(R.id.RD);
 
+        T_sangET = (EditText) findViewById(R.id.T_sang);
+        T_xiaET = (EditText) findViewById(R.id.T_xia);
+        S_sangET = (EditText) findViewById(R.id.S_sang);
+        S_xiaET = (EditText) findViewById(R.id.S_xia);
+        Q_sangET = (EditText) findViewById(R.id.Q_sang);
+        Q_xiaET = (EditText) findViewById(R.id.Q_xia);
+        q_ET = (EditText) findViewById(R.id.qq);
+
 
     }
 
@@ -114,16 +129,15 @@ public class MoShiActivity extends AppCompatActivity {
         String VD = VD_ET.getText().toString();
         String RD = RD_ET.getText().toString();
 
-/*
-        if (S_zong == "" || high == null || V_pin == null || count == null || Q_liu == null || Fen_Hao == null || VD == null || RD == null) {
+        String T_sang = T_sangET.getText().toString();
+        String T_xia = T_xiaET.getText().toString();
+        String S_sang = S_sangET.getText().toString();
+        String S_xia = S_xiaET.getText().toString();
+        String Q_sang = Q_sangET.getText().toString();
+        String Q_xia = Q_xiaET.getText().toString();
+        String q = q_ET.getText().toString();
 
-        }else{
 
-        }
-
-
-
-*/
         try {
             parm.setS_zong(Float.parseFloat(S_zong));
             parm.setHigh(Float.parseFloat(high));
@@ -133,12 +147,17 @@ public class MoShiActivity extends AppCompatActivity {
             parm.setFen_Hao(Float.parseFloat(Fen_Hao));
             parm.setVD(Float.parseFloat(VD));
             parm.setRD(Float.parseFloat(RD));
+
+            parm.setT_sang(Float.parseFloat(T_sang));
+            parm.setT_xia(Float.parseFloat(T_xia));
+            parm.setQ_sang(Float.parseFloat(Q_sang));
+            parm.setQ_xia(Float.parseFloat(Q_xia));
+            parm.setS_sang(Float.parseFloat(S_sang));
+            parm.setS_xia(Float.parseFloat(S_xia));
+            parm.setQ(Float.parseFloat(q));
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
 /**
  *      默认值 暂时放置
  */
@@ -149,7 +168,15 @@ public class MoShiActivity extends AppCompatActivity {
         parm.setQ_liu(1000);
         parm.setFen_Hao(0);
         parm.setVD(111);
-        parm.setRD(450);*/
+        parm.setRD(450);
+
+        parm.setS_sang(32);
+        parm.setS_xia(42);
+        parm.setQ_sang(33);
+        parm.setQ_xia(43);
+        parm.setT_sang(31);
+        parm.setT_xia(41);
+        parm.setQ(27);*/
 
         ParmUtil parmUtil = new ParmUtil(MoShiActivity.this,guazai,parm);
 

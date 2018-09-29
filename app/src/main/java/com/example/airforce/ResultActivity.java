@@ -53,12 +53,19 @@ public class ResultActivity extends AppCompatActivity {
     TextView PFMax_oil3;
     TextView PFMax_oil4;
 
+    TextView S_zong;
+    TextView High;
+    TextView V_pin;
+    TextView count;
+    TextView Q_liu;
+    TextView Q;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result2);
 
         initView();
         initData();
@@ -98,7 +105,6 @@ public class ResultActivity extends AppCompatActivity {
         FD_Min_Speed3.setText(String.valueOf(ParmUtil.FD_Min_speed[2]));
         FD_Min_Speed4.setText(String.valueOf(ParmUtil.FD_Min_speed[3]));
 
-
         DecimalFormat df = new DecimalFormat("0.00");
 
         kill1.setText(String.valueOf(df.format(ParmUtil.kill[0])));
@@ -106,6 +112,12 @@ public class ResultActivity extends AppCompatActivity {
         kill3.setText(String.valueOf(df.format(ParmUtil.kill[2])));
         kill4.setText(String.valueOf(df.format(ParmUtil.kill[3])));
 
+        S_zong.setText(String.valueOf(ParmUtil.S_zong));
+        High.setText(String.valueOf(ParmUtil.high));
+        V_pin.setText(String.valueOf(ParmUtil.V_pin));
+        count.setText(String.valueOf(ParmUtil.count));
+        Q_liu.setText(String.valueOf(ParmUtil.Q_liu));
+        Q.setText(String.valueOf(ParmUtil.Q));
     }
 
     private void initView() {
@@ -146,5 +158,12 @@ public class ResultActivity extends AppCompatActivity {
         kill2 = findViewById(R.id.jueduan20000_length);
         kill3 = findViewById(R.id.jueduan30000_length);
         kill4 = findViewById(R.id.jueduan40000_length);
+
+        S_zong = findViewById(R.id.s_zong);
+        High = findViewById(R.id.height);
+        V_pin = findViewById(R.id.v_ping);
+        count = findViewById(R.id.plan_count);
+        Q_liu = findViewById(R.id.q_liu);
+        Q = findViewById(R.id.q);
     }
 }

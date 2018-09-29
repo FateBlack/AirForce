@@ -15,6 +15,69 @@ public class Parm implements Serializable {
     private float Fen_Hao;
     private float VD;
     private float RD;
+    private float T_sang;
+    private float T_xia;
+    private float Q_sang;
+    private float Q_xia;
+    private float S_sang;
+    private float S_xia;
+    private float q;
+
+    public float getT_sang() {
+        return T_sang;
+    }
+
+    public void setT_sang(float t_sang) {
+        T_sang = t_sang;
+    }
+
+    public float getT_xia() {
+        return T_xia;
+    }
+
+    public void setT_xia(float t_xia) {
+        T_xia = t_xia;
+    }
+
+    public float getQ_sang() {
+        return Q_sang;
+    }
+
+    public void setQ_sang(float q_sang) {
+        Q_sang = q_sang;
+    }
+
+    public float getQ_xia() {
+        return Q_xia;
+    }
+
+    public void setQ_xia(float q_xia) {
+        Q_xia = q_xia;
+    }
+
+    public float getS_sang() {
+        return S_sang;
+    }
+
+    public void setS_sang(float s_sang) {
+        S_sang = s_sang;
+    }
+
+    public float getS_xia() {
+        return S_xia;
+    }
+
+    public void setS_xia(float s_xia) {
+        S_xia = s_xia;
+    }
+
+    public float getQ() {
+        return q;
+    }
+
+    public void setQ(float q) {
+        this.q = q;
+    }
 
     public float getS_zong() {
         return S_zong;

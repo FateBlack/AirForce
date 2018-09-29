@@ -19,12 +19,14 @@ public class ParmUtil {
     private float[][] GzArray = MorrayB.GzArray;
 
     // 入
-    private float S_zong;
-    private float high;
-    private float V_pin;
-    private float count;
-    private float Q_liu;
+    public static float S_zong;
+    public static float high;
+    public static float V_pin;
+    public static float count;
+    public static float Q_liu;
     private float Fen_Hao;
+    public static float Q;
+
     private float VD;
     private float RD;
 
@@ -76,7 +78,7 @@ public class ParmUtil {
         }
     }
 
-    public void get_q() {
+/*    public void get_q() {
         int i = (int) B50;
         int j = (int) high;
         try {
@@ -84,7 +86,7 @@ public class ParmUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     public void get_F50(){
         F50 = S_zong/V_pin*60;
@@ -159,7 +161,7 @@ public class ParmUtil {
    public ParmUtil(Activity context,
              int guazai,
              Parm parm) {
-
+        this.Q = parm.getQ();
         this.S_zong = parm.getS_zong();
         this.high = parm.getHigh();
         this.V_pin = parm.getV_pin();
@@ -169,7 +171,8 @@ public class ParmUtil {
         this.VD = parm.getVD();
         this.RD = parm.getRD();
 
-        Resources res = context.getResources();
+
+/*        Resources res = context.getResources();
         String[] T_array = res.getStringArray(R.array.gua_T);
         String[] S_array = res.getStringArray(R.array.gua_S);
         String[] Q_array = res.getStringArray(R.array.gua_Q);
@@ -180,8 +183,15 @@ public class ParmUtil {
 
         T_xia = Float.parseFloat(T_array[guazai + 11]);
         S_xia = Float.parseFloat(S_array[guazai + 11]);
-        Q_xia = Float.parseFloat(Q_array[guazai + 11]);
+        Q_xia = Float.parseFloat(Q_array[guazai + 11]);*/
 
+       T_shang = parm.getT_sang();
+       S_shang = parm.getS_sang();
+       Q_shang = parm.getQ_sang();
+
+       T_xia = parm.getT_xia();
+       S_xia = parm.getS_xia();
+       Q_xia = parm.getQ_xia();
 /*       Log.i("SHOW", "挂: " + guazai);
 
        Log.i("SHOW", "参数1: " + T_xia);
@@ -196,7 +206,8 @@ public class ParmUtil {
        MorrayB moArray = new MorrayB();
         // 开始单上突击
        get_B50();
-       get_q();
+       //get_q();
+       q = parm.getQ();
        get_F50();
        get_I49();
 
