@@ -18,13 +18,13 @@ import com.example.airforce.utils.ParmUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MoShiActivity extends AppCompatActivity {
+public class MoShiActivity extends AppCompatActivity implements View.OnClickListener {
 
     List<String> MoShi_list = new ArrayList<>();
     private ArrayAdapter<String> guazai_adapter;
 
     // 选择模式
-    private int guazai = 1;
+    private int guazai = 0;
 
     private Button bt;
     private EditText S_zong_ET;
@@ -44,11 +44,19 @@ public class MoShiActivity extends AppCompatActivity {
     private EditText Q_xiaET;
     private EditText q_ET;
 
+
+    private String T_shang;
+    private String S_shang;
+    private String Q_shang;
+    private String T_xia;
+    private String S_xia;
+    private String Q_xia;
+    private Button Get_q;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mo_shi);
-
 
         initView();
 
@@ -73,7 +81,7 @@ public class MoShiActivity extends AppCompatActivity {
         Resources res = this.getResources();
         final String[] guazaiArray = res.getStringArray(R.array.guazai);
 
-        for (int i=0;i<=10;i++) {
+        for (int i=0;i<=9;i++) {
             MoShi_list.add(guazaiArray[i]);
         }
 
@@ -115,8 +123,10 @@ public class MoShiActivity extends AppCompatActivity {
         Q_xiaET = (EditText) findViewById(R.id.Q_xia);
         q_ET = (EditText) findViewById(R.id.qq);
 
-
+        Get_q = (Button) findViewById(R.id.get_q);
+        Get_q.setOnClickListener(this);
     }
+
 
     private void initData() {
 
@@ -136,7 +146,6 @@ public class MoShiActivity extends AppCompatActivity {
         String Q_sang = Q_sangET.getText().toString();
         String Q_xia = Q_xiaET.getText().toString();
         String q = q_ET.getText().toString();
-
 
         try {
             parm.setS_zong(Float.parseFloat(S_zong));
@@ -180,5 +189,54 @@ public class MoShiActivity extends AppCompatActivity {
 
         ParmUtil parmUtil = new ParmUtil(MoShiActivity.this,guazai,parm);
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.get_q:
+
+                String high = high_ET.getText().toString();
+                String V_pin = V_pin_ET.getText().toString();
+                try {
+                    float a = Float.parseFloat(high);
+                    float b = Float.parseFloat(V_pin);
+                    ParmUtil parmUtilBB = new ParmUtil(a, b);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                float q = ParmUtil.q;
+                int highBB = Integer.parseInt(high);
+                int gua = highBB-1;
+
+                Resources resB = this.getResources();
+
+                String[] T_array = resB.getStringArray(R.array.gua_T);
+                String[] S_array = resB.getStringArray(R.array.gua_S);
+                String[] Q_array = resB.getStringArray(R.array.gua_Q);
+
+                int sang = guazai * 30+gua;
+                int xia = sang + 15;
+
+                Log.i("SHOW", "上 数据 ： " + sang +"  下:  "+xia);
+
+                T_shang = T_array[sang];
+                S_shang = S_array[sang];
+                Q_shang = Q_array[sang];
+                
+                T_xia = T_array[xia];
+                S_xia = S_array[xia];
+                Q_xia = Q_array[xia];
+
+                S_sangET.setText(S_shang);
+                S_xiaET.setText(S_xia);
+                Q_sangET.setText(Q_shang);
+                Q_xiaET.setText(Q_xia);
+                T_sangET.setText(T_shang);
+                T_xiaET.setText(T_xia);
+                q_ET.setText(String.valueOf(q));
+        }
     }
 }

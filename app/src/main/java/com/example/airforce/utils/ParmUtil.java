@@ -78,15 +78,22 @@ public class ParmUtil {
         }
     }
 
-/*    public void get_q() {
+    public void get_q() {
+
+
         int i = (int) B50;
         int j = (int) high;
+        Log.i("SHOW", "获得 B50 " + i + " 获得 high " + j);
+
         try {
             q = GzArray[i][j] + Fen_Hao;
+            Log.i("SHOW", "获得 q " + q);
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }*/
+
+    }
+
 
     public void get_F50(){
         F50 = S_zong/V_pin*60;
@@ -158,9 +165,21 @@ public class ParmUtil {
     }
 
 
+    public ParmUtil(float high,float V_pin) {
+
+        MorrayB moArray = new MorrayB();
+        this.high = high;
+        this.V_pin = V_pin;
+        get_B50();
+        get_q();
+    }
+
    public ParmUtil(Activity context,
              int guazai,
              Parm parm) {
+
+
+
         this.Q = parm.getQ();
         this.S_zong = parm.getS_zong();
         this.high = parm.getHigh();
@@ -232,5 +251,7 @@ public class ParmUtil {
 
        get_CF_oil();
     }
+
+
 
 }
