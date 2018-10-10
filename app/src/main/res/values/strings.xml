@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">飞机油量计算系统</string>
+    <string name="app_name">油量计算系统</string>
     <string-array name="spingarr">
         <item>机型1</item>
         <item>机型2</item>

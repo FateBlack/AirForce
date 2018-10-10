@@ -25,7 +25,7 @@ public class MainActivityBB extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i>0){
+                if (i>-1){
                     AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivityBB.this);
                     dialog.setMessage("您选择了机型："+(i+1))
                             .setPositiveButton("确定", new DialogInterface.OnClickListener() {
@@ -36,7 +36,6 @@ public class MainActivityBB extends AppCompatActivity {
                             })
                             .setNegativeButton("取消", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
-
                                 }
                             });
                     dialog.show();
@@ -49,12 +48,10 @@ public class MainActivityBB extends AppCompatActivity {
                 dialog.setMessage("请您选择机型")
                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-
                             }
                         })
                         .setNegativeButton("取消", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-
                             }
                         });
                 dialog.show();

@@ -12,8 +12,6 @@ import java.text.DecimalFormat;
 
 public class ResultActivity extends AppCompatActivity {
 
-
-
     TextView air_hd_1T;
     TextView air_hd_2T;
     TextView air_hd_3T;
